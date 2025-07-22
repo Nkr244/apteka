@@ -882,6 +882,10 @@ h3 {
         color: #022135;
         padding: 0 16px 0 0;
     }
+    .accordion-item .value svg {
+        width: 16px;
+        height: 16px;
+    }
 
     .accordion-content {
         display: none;
@@ -931,5 +935,15 @@ h3 {
 
     .active .arrow-down {
         transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .accordion-item a {
+        max-width: 200px;
+    }
+
+    .accordion-item .value {
+        gap: 5px;
     }
 }
