@@ -758,7 +758,6 @@ h3 {
     display: flex;
     height: 100%;
     transform: translateY(10px);
-    min-width: 1000px;
     width: 100%;
 }
 
@@ -778,7 +777,7 @@ h3 {
 .segment-value,
 .segment-value-last {
     position: absolute;
-    top: -160%;
+    top: -200%;
     left: 0;
     font-weight: 700;
     font-size: 16px;
@@ -792,28 +791,31 @@ h3 {
 }
 
 .segment.red {
-    width: 5%;
+    width: 6%;
+    min-width: 52px;
     background-color: #F4333E;
 }
 
 .segment.blue {
-    width: 26%;
+    width: 36%;
+    min-width: 125px;
     background-color: #0047D6;
 }
 
 .segment.green {
-    width: 70%;
+    width: 72%;
+    min-width: 125px;
     background-color: #00AB07;
 }
 
 .marker {
     position: absolute;
-    bottom: -25px;
+    bottom: -26px;
     width: 0;
     height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 10px solid #000;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid #000;
 }
 
 .table-container {
