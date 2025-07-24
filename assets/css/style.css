@@ -891,6 +891,7 @@ h3 {
     .accordion-item .value svg {
         width: 16px;
         height: 16px;
+        max-width: max-content;
     }
 
     .accordion-content {
