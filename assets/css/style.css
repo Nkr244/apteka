@@ -601,6 +601,7 @@ h3 {
     height: 74px;
 }
 
+
 .table-container td {
     border-bottom: 1px solid #ddd;
     padding: 16px;
@@ -857,6 +858,7 @@ h3 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 78px;
     }
 
     .accordion-item .title {
@@ -878,7 +880,8 @@ h3 {
 
     .accordion-item .value {
         display: flex;
-        gap: 24px;
+        align-items: center;
+        gap: 32px;
         font-weight: 700;
         font-size: 18px;
         line-height: 21px;
@@ -941,12 +944,28 @@ h3 {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .header-logo {
+        max-width: 177px;
+        height: 29px;
+    }
+
+    .main-layout h1 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .accordion-item a {
         max-width: 200px;
     }
+}
 
-    .accordion-item .value {
-        gap: 5px;
-    }
+.table-container tbody tr td:nth-child(4),
+.table-container tbody tr td:nth-child(6),
+.table-container tbody tr td:nth-child(7),
+.table-container tbody tr td:last-child,
+.table-container td:first-child {
+    transform: translateX(-10px);
 }

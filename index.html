@@ -112,7 +112,7 @@
                 <span class="title">Период</span>
                 <div class="custom-select">
                     <div class="select-input has-value">
-                        <input type="text" placeholder="Поиск" value="Июль 2025" oninput="filterOptions()"
+                        <input type="text" placeholder="Не выбрано" value="Июль 2025" oninput="filterOptions()"
                                onfocus="toggleOptions()">
                         <button class="clear-btn" onclick="clearValue()">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -167,18 +167,18 @@
                 </div>
             </div>
             <div class="table-container">
-                <h3>Применные KPI</h3>
+                <h3>Применяемые KPI</h3>
                 <table>
                     <thead>
                     <tr>
-                        <th>Условие<br>обязательное</th>
-                        <th>Назначаемые KPI</th>
-                        <th>Измерение параметров</th>
-                        <th>Знач.</th>
-                        <th>Отн.</th>
-                        <th>Корректиров. знач.<br>параметра</th>
-                        <th>Плановый коэфф.</th>
-                        <th>Итоговый коэфф.</th>
+                        <th><span>Условное<br>  обозначение</span></th>
+                        <th><span>Назначаемые KPI</span></th>
+                        <th><span>Измерение параметров</span></th>
+                        <th><span>Знач.</span></th>
+                        <th><span>Отн.</span></th>
+                        <th><span>Корректиров. знач.<br>параметра</span></th>
+                        <th><span>Плановый коэфф.</span></th>
+                        <th><span>Итоговый коэфф.</span></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -372,10 +372,11 @@
                         <h4>
                             <span class="title">К1 <a href="#">Отпуск товара</a></span>
                             <span class="value" style="color: var(--color-red)">0,8
-                                <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 6L8 10L12 6" stroke="#44464D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+
+                                <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                             </span>
                         </h4>
                         <div class="accordion-content">
@@ -392,7 +393,7 @@
                                     <td>></td>
                                     <td>15</td>
                                     <td>0,8</td>
-                                    <td style="color: var(--color-red)" rowspan="5">0,8</td>
+                                    <td style="color: var(--color-red); font-weight: 700; font-size: 18px;" rowspan="5">0,8</td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -426,10 +427,10 @@
                             <span class="title">К2 <a href="#">Консультирование</a></span>
                             <span class="value" style="color: #00AB07">
                                 1,2
-                              <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                   xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 6L8 10L12 6" stroke="#44464D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                                           <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                             </span>
                         </h4>
                         <div class="accordion-content">
@@ -446,7 +447,7 @@
                                     <td>≤</td>
                                     <td>80%</td>
                                     <td>0,8</td>
-                                    <td style="color: #00AB07" rowspan="5">1,2</td>
+                                    <td style="color: #00AB07; font-weight: 700; font-size: 18px;" rowspan="5">1,2</td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -480,10 +481,10 @@
                             <span class="title">К3 <a href="#">Продажа товаров из приоритетной группы</a></span>
                             <span class="value" style="color: #00AB07">
                                 1,2
-                              <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                   xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 6L8 10L12 6" stroke="#44464D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                                           <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                             </span>
                         </h4>
                         <div class="accordion-content">
@@ -500,7 +501,7 @@
                                     <td>≤</td>
                                     <td>10%</td>
                                     <td>0,8</td>
-                                    <td style="color: #00AB07" rowspan="5">1,2</td>
+                                    <td style="color: #00AB07; font-weight: 700; font-size: 18px;" rowspan="5">1,2</td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -534,10 +535,10 @@
                             <span class="title">К4 <a href="#">Сверка остатков</a></span>
                             <span class="value" style="color: #0047D6">
                                 0,9
-                              <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                   xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 6L8 10L12 6" stroke="#44464D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                                           <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                             </span>
                         </h4>
                         <div class="accordion-content">
@@ -554,7 +555,7 @@
                                     <td>></td>
                                     <td>3</td>
                                     <td>0,8</td>
-                                    <td style="color: #0047D6" rowspan="3">0,9</td>
+                                    <td style="color: #0047D6; font-weight: 700; font-size: 18px;" rowspan="3">0,9</td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -576,10 +577,10 @@
                             <span class="title">К5 <a href="#">Оценка руководителей</a></span>
                             <span class="value" style="color: var(--color-red)">
                                 0,8
-                              <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                   xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 6L8 10L12 6" stroke="#44464D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                                           <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
                             </span>
                         </h4>
                         <div class="accordion-content">
@@ -596,7 +597,7 @@
                                     <td>></td>
                                     <td>15</td>
                                     <td>0,8</td>
-                                    <td style="color: var(--color-red)" rowspan="3">0,8</td>
+                                    <td style="color: var(--color-red); font-weight: 700; font-size: 18px;" rowspan="3">0,8</td>
                                 </tr>
                                 <tr>
                                     <td></td>
