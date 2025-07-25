@@ -824,6 +824,10 @@ h3 {
     flex-direction: column;
     gap: 20px;
     margin-bottom: 20px;
+    
+    @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 .accordion {
