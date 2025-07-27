@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Твоя Аптека</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="header-container">
+            <img class="header-logo" src="assets/images/logo.svg" alt="logo">
+            <div class="burger-menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <div class="sidebar sidebar-mobile menu-list">
+                    <div class="account-info">
+                        <div class="account-info-item">
+                            <div class="account-name">
+                                <img src="assets/icons/account.png" alt="icon-account">
+                                <p>Марина
+                                    Иванова</p>
+                            </div>
+                            <a href="#" class="account-logout">
+                                <img src="assets/icons/back.png" alt="account-logout">
+                                Выйти из личного кабинет
+                            </a>
+                        </div>
+                        <div class="loyalty-program">
+                            <img src="assets/icons/loyalty-program.svg" alt="icon-loyalty-program">
+                            <div>
+                                <p class="loyalty-program-title">Не удалось получить счет</p>
+                                <p>Программа «Спасибо» <span>0</span> монет </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-menu">
+                        <div class="sidebar-menu-list">
+                            <p class="title">Аналитика</p>
+                            <a href="#" class="sidebar-menu-item">Мои результаты</a>
+                        </div>
+                        <div class="sidebar-menu-list">
+                            <p class="title">Компания</p>
+                            <a href="#" class="sidebar-menu-item">Главная</a>
+                            <a href="#" class="sidebar-menu-item">О компании</a>
+                            <a href="#" class="sidebar-menu-item">Конкурсы</a>
+                            <a href="#" class="sidebar-menu-item">Новости</a>
+                            <a href="#" class="sidebar-menu-item">Обучение</a>
+                            <a href="#" class="sidebar-menu-item">Документы</a>
+                            <a href="#" class="sidebar-menu-item">Служебные сервисы</a>
+                            <a href="#" class="sidebar-menu-item">Заявки</a>
+                            <a href="#" class="sidebar-menu-item">Твои монеты</a>
+                            <a href="#" class="sidebar-menu-item">Добрая помощь</a>
+                            <a href="#" class="sidebar-menu-item">Равиваемся вместе</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-layout container">
+        <div class="sidebar">
+            <div class="account-info">
+                <div class="account-info-item">
+                    <div class="account-name">
+                        <img src="assets/icons/account.png" alt="icon-account">
+                        <p>Марина
+                            Иванова</p>
+                    </div>
+                    <a href="#" class="account-logout">
+                        <img src="assets/icons/back.png" alt="account-logout">
+                        Выйти из личного кабинет
+                    </a>
+                </div>
+                <div class="loyalty-program">
+                    <img src="assets/icons/loyalty-program.svg" alt="icon-loyalty-program">
+                    <div>
+                        <p class="loyalty-program-title">Не удалось получить счет</p>
+                        <p>Программа «Спасибо» <span>0</span> монет </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-list">
+                    <p class="title">Аналитика</p>
+                    <a href="#" class="sidebar-menu-item">Мои результаты</a>
+                </div>
+                <div class="sidebar-menu-list">
+                    <p class="title">Компания</p>
+                    <a href="#" class="sidebar-menu-item">Главная</a>
+                    <a href="#" class="sidebar-menu-item">О компании</a>
+                    <a href="#" class="sidebar-menu-item">Конкурсы</a>
+                    <a href="#" class="sidebar-menu-item">Новости</a>
+                    <a href="#" class="sidebar-menu-item">Обучение</a>
+                    <a href="#" class="sidebar-menu-item">Документы</a>
+                    <a href="#" class="sidebar-menu-item">Служебные сервисы</a>
+                    <a href="#" class="sidebar-menu-item">Заявки</a>
+                    <a href="#" class="sidebar-menu-item">Твои монеты</a>
+                    <a href="#" class="sidebar-menu-item">Добрая помощь</a>
+                    <a href="#" class="sidebar-menu-item">Равиваемся вместе</a>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="breadcrumbs">
+                <a class="active" href="#">Главная</a> / <a href="index.html">Мои результаты</a> / <a href="k3.html">К3: Продажа товаров из приоритетной группы</a>
+            </div>
+            <h1>
+                <a class="back-arrow" href="index.html">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28 16L4 16" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M13.9996 26L4 16L13.9998 6" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                К3: Продажа товаров из приоритетной группы
+            </h1>
+            <div class="filter-period">
+                <span class="title">Период</span>
+                <div class="custom-select">
+                    <div class="select-input has-value">
+                        <input type="text" placeholder="Не выбрано" value="Июль 2025" oninput="filterOptions()"
+                               onfocus="toggleOptions()">
+                        <button class="clear-btn" onclick="clearValue()">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2998 4.70093L4.70014 11.3006" stroke="#44464D" stroke-width="1.5"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.70056 4.70032L11.3002 11.3" stroke="#44464D" stroke-width="1.5"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="btn-down">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6L8 10L12 6" stroke="#44464D" stroke-width="1.5" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+
+                        </button>
+                    </div>
+                    <div class="options" id="options">
+                        <div class="option selected" data-value="default">Июль 2025
+                            <span class="check-mark">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M12.3636 5L6.36363 11L3.63635 8.27273" stroke="#44464D" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"/>
+</svg>
+                            </span>
+                        </div>
+                        <div class="option" data-value="default">Июнь 2025
+                            <span class="check-mark">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M12.3636 5L6.36363 11L3.63635 8.27273" stroke="#44464D" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"/>
+</svg>
+                            </span>
+                        </div>
+                        <div class="option" data-value="default">Май 2025
+                            <span class="check-mark">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M12.3636 5L6.36363 11L3.63635 8.27273" stroke="#44464D" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"/>
+</svg>
+                            </span>
+                        </div>
+                        <div class="no-results" id="noResults" style="display: none;">По запросу «<span
+                                id="searchTerm"></span>» ничего не найдено
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="metrics metrics-one-blocks">
+                <h3>Показатели KPI</h3>
+                <div class="metrics-list">
+                    <div class="metrics-item">
+                        <p class="title">Пенитрация приоритетных товаров</p>
+                        <p>51%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="core-statistics">
+                <div class="core-statistics-item one-item">
+                    <h3>Измеряемые параметры</h3>
+                    <div class="core-statistics-item-list two-item">
+                        <div class="core-statistics-list-item">
+                            <p>Общее количество чеков</p>
+                            <div>
+                                100
+                            </div>
+                        </div>
+                        <div class="core-statistics-list-item">
+                            <p>Количество чеков с приоритетными товарами</p>
+                            <div>
+                                51
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h4>
+                            <span class="title">Измеряемые параметры</span>
+                            <span class="value" style="color: var(--color-red)">
+
+                                <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                            </span>
+                        </h4>
+                        <div class="accordion-content">
+                            <div class="core-statistics-list-item">
+                                <p>Общее количество чеков</p>
+                                <div>
+                                    100
+                                </div>
+                            </div>
+                            <div class="core-statistics-list-item">
+                                <p>Количество чеков с приоритетными товарами</p>
+                                <div>
+                                    51
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/pagination.js"></script>
+</body>
+</html>

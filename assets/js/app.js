@@ -89,8 +89,12 @@ document.addEventListener('click', function(e) {
 updateClearButton();
 
 
-document.querySelectorAll('.accordion-item').forEach(item => {
+document.querySelectorAll('.accordion-item h4').forEach(item => {
     item.addEventListener('click', () => {
         item.classList.toggle('active');
+        const content = item.nextElementSibling;
+        if (content) {
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
     });
 });

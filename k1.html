@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Твоя Аптека</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="header-container">
+            <img class="header-logo" src="assets/images/logo.svg" alt="logo">
+            <div class="burger-menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <div class="sidebar sidebar-mobile menu-list">
+                    <div class="account-info">
+                        <div class="account-info-item">
+                            <div class="account-name">
+                                <img src="assets/icons/account.png" alt="icon-account">
+                                <p>Марина
+                                    Иванова</p>
+                            </div>
+                            <a href="#" class="account-logout">
+                                <img src="assets/icons/back.png" alt="account-logout">
+                                Выйти из личного кабинет
+                            </a>
+                        </div>
+                        <div class="loyalty-program">
+                            <img src="assets/icons/loyalty-program.svg" alt="icon-loyalty-program">
+                            <div>
+                                <p class="loyalty-program-title">Не удалось получить счет</p>
+                                <p>Программа «Спасибо» <span>0</span> монет </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-menu">
+                        <div class="sidebar-menu-list">
+                            <p class="title">Аналитика</p>
+                            <a href="#" class="sidebar-menu-item">Мои результаты</a>
+                        </div>
+                        <div class="sidebar-menu-list">
+                            <p class="title">Компания</p>
+                            <a href="#" class="sidebar-menu-item">Главная</a>
+                            <a href="#" class="sidebar-menu-item">О компании</a>
+                            <a href="#" class="sidebar-menu-item">Конкурсы</a>
+                            <a href="#" class="sidebar-menu-item">Новости</a>
+                            <a href="#" class="sidebar-menu-item">Обучение</a>
+                            <a href="#" class="sidebar-menu-item">Документы</a>
+                            <a href="#" class="sidebar-menu-item">Служебные сервисы</a>
+                            <a href="#" class="sidebar-menu-item">Заявки</a>
+                            <a href="#" class="sidebar-menu-item">Твои монеты</a>
+                            <a href="#" class="sidebar-menu-item">Добрая помощь</a>
+                            <a href="#" class="sidebar-menu-item">Равиваемся вместе</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-layout container">
+        <div class="sidebar">
+            <div class="account-info">
+                <div class="account-info-item">
+                    <div class="account-name">
+                        <img src="assets/icons/account.png" alt="icon-account">
+                        <p>Марина
+                            Иванова</p>
+                    </div>
+                    <a href="#" class="account-logout">
+                        <img src="assets/icons/back.png" alt="account-logout">
+                        Выйти из личного кабинет
+                    </a>
+                </div>
+                <div class="loyalty-program">
+                    <img src="assets/icons/loyalty-program.svg" alt="icon-loyalty-program">
+                    <div>
+                        <p class="loyalty-program-title">Не удалось получить счет</p>
+                        <p>Программа «Спасибо» <span>0</span> монет </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-list">
+                    <p class="title">Аналитика</p>
+                    <a href="#" class="sidebar-menu-item">Мои результаты</a>
+                </div>
+                <div class="sidebar-menu-list">
+                    <p class="title">Компания</p>
+                    <a href="#" class="sidebar-menu-item">Главная</a>
+                    <a href="#" class="sidebar-menu-item">О компании</a>
+                    <a href="#" class="sidebar-menu-item">Конкурсы</a>
+                    <a href="#" class="sidebar-menu-item">Новости</a>
+                    <a href="#" class="sidebar-menu-item">Обучение</a>
+                    <a href="#" class="sidebar-menu-item">Документы</a>
+                    <a href="#" class="sidebar-menu-item">Служебные сервисы</a>
+                    <a href="#" class="sidebar-menu-item">Заявки</a>
+                    <a href="#" class="sidebar-menu-item">Твои монеты</a>
+                    <a href="#" class="sidebar-menu-item">Добрая помощь</a>
+                    <a href="#" class="sidebar-menu-item">Равиваемся вместе</a>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="breadcrumbs">
+                <a class="active" href="#">Главная</a> / <a href="index.html">Мои результаты</a> / <a href="k1.html">К1:
+                Отпуск товара</a>
+            </div>
+            <h1>
+                <a class="back-arrow" href="index.html">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28 16L4 16" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M13.9996 26L4 16L13.9998 6" stroke="#25282B" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                К1: Отпуск товара
+            </h1>
+            <div class="filter-period">
+                <span class="title">Период</span>
+                <div class="custom-select">
+                    <div class="select-input has-value">
+                        <input type="text" placeholder="Не выбрано" value="Июль 2025" oninput="filterOptions()"
+                               onfocus="toggleOptions()">
+                        <button class="clear-btn" onclick="clearValue()">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.2998 4.70093L4.70014 11.3006" stroke="#44464D" stroke-width="1.5"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.70056 4.70032L11.3002 11.3" stroke="#44464D" stroke-width="1.5"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="btn-down">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6L8 10L12 6" stroke="#44464D" stroke-width="1.5" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+
+                        </button>
+                    </div>
+                    <div class="options" id="options">
+                        <div class="option selected" data-value="default">Июль 2025
+                            <span class="check-mark">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M12.3636 5L6.36363 11L3.63635 8.27273" stroke="#44464D" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"/>
+</svg>
+                            </span>
+                        </div>
+                        <div class="option" data-value="default">Июнь 2025
+                            <span class="check-mark">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M12.3636 5L6.36363 11L3.63635 8.27273" stroke="#44464D" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"/>
+</svg>
+                            </span>
+                        </div>
+                        <div class="option" data-value="default">Май 2025
+                            <span class="check-mark">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M12.3636 5L6.36363 11L3.63635 8.27273" stroke="#44464D" stroke-width="1.5" stroke-linecap="round"
+      stroke-linejoin="round"/>
+</svg>
+                            </span>
+                        </div>
+                        <div class="no-results" id="noResults" style="display: none;">По запросу «<span
+                                id="searchTerm"></span>» ничего не найдено
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="metrics metrics-two-blocks">
+                <h3>Показатели KPI</h3>
+                <div class="metrics-list">
+                    <div class="metrics-item">
+                        <p class="title">Суммарное количество нарушений</p>
+                        <p>20</p>
+                    </div>
+                    <div class="metrics-item">
+                        <p class="title">Итоговый коэффициент</p>
+                        <p class="color-red">0,8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="core-statistics">
+                <div class="core-statistics-item">
+                    <h3>Производительность труда</h3>
+                    <div class="core-statistics-item-list">
+                        <div class="core-statistics-list-item">
+                            <p>Дневной норматив производительности труда (количество покупателей)</p>
+                            <div>
+                                40
+                            </div>
+                        </div>
+                        <div class="core-statistics-list-item">
+                            <p>Допустимое отклонение от норматива производительности труда</p>
+                            <div>
+                                10%
+                            </div>
+                        </div>
+                        <div class="core-statistics-list-item">
+                            <p>Количество смен с низкой производительностью труда</p>
+                            <div>
+                                127,78%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="core-statistics-item">
+                    <h3>Кассовая дисциплина</h3>
+                    <div class="core-statistics-item-list">
+                        <div class="core-statistics-list-item">
+                            <p>Количество смен с суммой расхождения кассового остатка</p>
+                            <div>
+                                15
+                            </div>
+                        </div>
+                        <div class="core-statistics-list-item">
+                            <p>Допустимое расхождение кассового остатка</p>
+                            <div>
+                                100 ₽
+                            </div>
+                        </div>
+                        <div class="core-statistics-list-item">
+                            <p>Количество смен с суммой расхождения кассового остатка выше допустимого</p>
+                            <div>
+                                8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="core-statistics-item">
+                    <h3>Возврат</h3>
+                    <div class="core-statistics-item-list">
+                        <div class="core-statistics-list-item">
+                            <p>Количесто возвратов товара</p>
+                            <div>
+                                1
+                            </div>
+                        </div>
+                        <div class="core-statistics-list-item">
+                            <p>Допустимое количество возвратов</p>
+                            <div>
+                                0
+                            </div>
+                        </div>
+                        <div class="core-statistics-list-item">
+                            <p>Учетное количество возвратов товара</p>
+                            <div>
+                                1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="core-statistics-item">
+                    <h3>Экспертиза рецептов</h3>
+                    <div class="core-statistics-item-list">
+                        <div class="core-statistics-list-item">
+                            <p>Количестов ошибок при отпуске по рецептам</p>
+                            <div>
+                                0
+                            </div>
+                        </div>
+                        <div class="core-statistics-list-item">
+                            <p>Допустимое количество ошибок при отпуске по рецептам</p>
+                            <div>
+                                1
+                            </div>
+                        </div>
+                        <div class="core-statistics-list-item">
+                            <p>Учетное количество ошибок при отпуске по рецептам</p>
+                            <div>
+                                0
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h4>
+                            <span class="title">Производительность труда</span>
+                            <span class="value" style="color: var(--color-red)">
+
+                                <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                            </span>
+                        </h4>
+                        <div class="accordion-content">
+                            <div class="core-statistics-list-item">
+                                <p>Дневной норматив производительности труда (количество покупателей)</p>
+                                <div>
+                                    40
+                                </div>
+                            </div>
+                            <div class="core-statistics-list-item">
+                                <p>Допустимое отклонение от норматива производительности труда</p>
+                                <div>
+                                    10%
+                                </div>
+                            </div>
+                            <div class="core-statistics-list-item">
+                                <p>Количество смен с низкой производительностью труда</p>
+                                <div>
+                                    127,78%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4>
+                            <span class="title">Кассовая дисциплина</span>
+                            <span class="value" style="color: var(--color-red)">
+
+                                <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                            </span>
+                        </h4>
+                        <div class="accordion-content">
+                            <div class="core-statistics-list-item">
+                                <p>Количество смен с суммой расхождения кассового остатка</p>
+                                <div>
+                                    15
+                                </div>
+                            </div>
+                            <div class="core-statistics-list-item">
+                                <p>Допустимое расхождение кассового остатка</p>
+                                <div>
+                                    100 ₽
+                                </div>
+                            </div>
+                            <div class="core-statistics-list-item">
+                                <p>Количество смен с суммой расхождения кассового остатка выше допустимого</p>
+                                <div>
+                                    8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4>
+                            <span class="title">Возврат</span>
+                            <span class="value" style="color: var(--color-red)">
+
+                                <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                            </span>
+                        </h4>
+                        <div class="accordion-content">
+                            <div class="core-statistics-list-item">
+                                <p>Количесто возвратов товара</p>
+                                <div>
+                                    1
+                                </div>
+                            </div>
+                            <div class="core-statistics-list-item">
+                                <p>Допустимое количество возвратов</p>
+                                <div>
+                                    0
+                                </div>
+                            </div>
+                            <div class="core-statistics-list-item">
+                                <p>Учетное количество возвратов товара</p>
+                                <div>
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4>
+                            <span class="title">Экспертиза рецептов</span>
+                            <span class="value" style="color: var(--color-red)">
+
+                                <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                            </span>
+                        </h4>
+                        <div class="accordion-content">
+                            <div class="core-statistics-list-item">
+                                <p>Количестов ошибок при отпуске по рецептам</p>
+                                <div>
+                                    0
+                                </div>
+                            </div>
+                            <div class="core-statistics-list-item">
+                                <p>Допустимое количество ошибок при отпуске по рецептам</p>
+                                <div>
+                                    1
+                                </div>
+                            </div>
+                            <div class="core-statistics-list-item">
+                                <p>Учетное количество ошибок при отпуске по рецептам</p>
+                                <div>
+                                    0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion detailing">
+                <div class="accordion-item">
+                    <h4>
+                        <span class="title">Детализация </span>
+                        <span class="value" style="color: var(--color-red)">
+                <svg class="arrow-down" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 5L8 11L14 5" stroke="#022135" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </span>
+                    </h4>
+                    <div class="accordion-content">
+                        <div class="table-wrapper">
+                            <table id="data-table">
+                                <thead>
+                                <tr>
+                                    <td>№
+                                    </td>
+                                    <td style="width: 285px; height: 50px;">Дата
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83325 12.0834L9.99992 7.91669L14.1666 12.0834H5.83325Z"
+                                                  fill="black"/>
+                                        </svg>
+                                    </td>
+                                    <td>Аптека
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83325 12.0834L9.99992 7.91669L14.1666 12.0834H5.83325Z"
+                                                  fill="black"/>
+                                        </svg>
+                                    </td>
+                                    <td>Число покупателей
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83325 12.0834L9.99992 7.91669L14.1666 12.0834H5.83325Z"
+                                                  fill="black"/>
+                                        </svg>
+                                    </td>
+                                    <td>% выполнения норматива
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83325 12.0834L9.99992 7.91669L14.1666 12.0834H5.83325Z"
+                                                  fill="black"/>
+                                        </svg>
+                                    </td>
+                                    <td>Сумма расхождения кассового остатка
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83325 12.0834L9.99992 7.91669L14.1666 12.0834H5.83325Z"
+                                                  fill="black"/>
+                                        </svg>
+                                    </td>
+                                    <td>Аптека
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83325 12.0834L9.99992 7.91669L14.1666 12.0834H5.83325Z"
+                                                  fill="black"/>
+                                        </svg>
+                                    </td>
+                                    <td>Число покупателей
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83325 12.0834L9.99992 7.91669L14.1666 12.0834H5.83325Z"
+                                                  fill="black"/>
+                                        </svg>
+                                    </td>
+                                    <td>% выполнения норматива
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83325 12.0834L9.99992 7.91669L14.1666 12.0834H5.83325Z"
+                                                  fill="black"/>
+                                        </svg>
+                                    </td>
+                                    <td>Сумма расхождения кассового остатка
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.83325 12.0834L9.99992 7.91669L14.1666 12.0834H5.83325Z"
+                                                  fill="black"/>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <!-- Repeat similar rows for all 15 entries as in your original HTML -->
+                                <tr>
+                                    <td>2</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>01.09.2024</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                    <td>Гастелло, 7</td>
+                                    <td>38</td>
+                                    <td>95%</td>
+                                    <td>199</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination">
+                                <button id="prev-page" disabled>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 4L6 8L10 12" stroke="#022135" stroke-width="1.5"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <div class="page-input-wrapper">
+                                    <input type="number" id="page-input" min="1" value="1">
+                                </div>
+                                <button id="next-page">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 12L10 8L6 4" stroke="#022135" stroke-width="1.5"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/pagination.js"></script>
+</body>
+</html>

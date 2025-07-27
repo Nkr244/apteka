@@ -115,8 +115,21 @@ input[type='file'] {
 }
 
 .main-layout h1 {
+    display: flex;
+    align-items: center;
+    gap: 32px;
     border-bottom: 1px solid #E0E0E0;
     padding-bottom: 32px;
+}
+
+.main-layout h1 .back-arrow {
+    display: none;
+
+    @media screen and (max-width: 768px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 h1 {
@@ -424,6 +437,10 @@ h3 {
     font-size: 12px;
     line-height: 14px;
     color: var(--color-black);
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 .breadcrumbs a {
@@ -720,6 +737,28 @@ h3 {
     min-height: 38px;
 }
 
+.metrics.metrics-two-blocks .metrics-list {
+    gap: 8px;
+}
+
+.metrics.metrics-two-blocks .metrics-list .metrics-item {
+    flex-basis: calc(50% - 4px);
+
+    @media screen and (max-width: 550px) {
+        flex-basis: 100%;
+    }
+}
+
+.metrics.metrics-one-blocks .metrics-list .metrics-item {
+    flex-basis: 100%;
+
+
+}
+
+.color-red {
+    color: var(--color-red) !important;
+}
+
 .rating {
     display: flex;
     flex-direction: column;
@@ -824,7 +863,7 @@ h3 {
     flex-direction: column;
     gap: 20px;
     margin-bottom: 20px;
-    
+
     @media screen and (max-width: 768px) {
         margin-bottom: 0;
     }
@@ -892,6 +931,7 @@ h3 {
         color: #022135;
         padding: 0 16px 0 0;
     }
+
     .accordion-item .value svg {
         width: 16px;
         height: 16px;
@@ -925,7 +965,7 @@ h3 {
         font-weight: 400;
     }
 
-    .active .accordion-content {
+    .accordion-item h4.active .accordion-content {
         display: block;
     }
 
@@ -973,4 +1013,407 @@ h3 {
 .table-container tbody tr td:last-child,
 .table-container td:first-child {
     transform: translateX(-10px);
+}
+
+.core-statistics {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.core-statistics-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-basis: calc(25% - 8px);
+
+    @media screen and (max-width: 1600px) {
+        flex-basis: calc(33% - 8px);
+    }
+    @media screen and (max-width: 1076px) {
+        flex-basis: calc(50% - 8px);
+    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.core-statistics-item h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #022135;
+    padding: 15px 16px;
+}
+
+.core-statistics-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.core-statistics-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: #FFFFFF;
+    height: 70px;
+}
+
+.core-statistics-list-item p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #022135;
+}
+
+.core-statistics-list-item div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+    width: 80px;
+    min-width: 80px;
+    height: 37px;
+    background: #EEF6F7;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #262626;
+}
+
+.core-statistics .active .accordion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.core-statistics .accordion-content .core-statistics-list-item {
+    height: 76px;
+    gap: 16px;
+}
+
+.core-statistics .accordion-content .core-statistics-list-item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #022135;
+}
+
+@media screen and (max-width: 1076px) {
+    .core-statistics .accordion {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+        }
+    }
+}
+
+.core-statistics .accordion-item {
+    background-color: transparent;
+}
+
+.core-statistics .accordion-item h4 {
+    background-color: white;
+    margin-bottom: 2px;
+}
+
+.accordion.detailing {
+    display: flex;
+}
+
+.accordion {
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}
+
+.accordion-item {
+    cursor: pointer;
+    background-color: white;
+}
+
+.accordion-item h4 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    color: #3668EA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+}
+
+.accordion-item .title {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #022135;
+    padding: 16px;
+    gap: 16px;
+}
+
+.accordion-item a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3668EA;
+}
+
+.accordion-item .value {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #022135;
+    padding: 0 16px 0 0;
+}
+
+.accordion-item .value svg {
+    width: 16px;
+    height: 16px;
+    max-width: max-content;
+}
+
+.accordion-content {
+    display: none;
+}
+
+.table-container .accordion .accordion-content table {
+    display: inline-table;
+}
+
+.accordion-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.accordion-content table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: none;
+}
+
+.accordion-content table tr:first-child {
+    background: #EEF6F7;
+}
+
+.table-container tbody tr td:nth-child(4), .table-container td:first-child {
+    font-weight: 400;
+}
+
+.active .accordion-content {
+    display: block;
+}
+
+.table-container tbody tr td:last-child {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.accordion-content table tr:first-child td {
+    padding: 16px;
+    font-weight: 700;
+}
+
+.table-container .accordion tbody tr td:nth-child(2), .table-container .accordion tbody tr td:nth-child(3) {
+    text-align: center;
+}
+
+.active .arrow-down {
+    transform: rotate(180deg);
+}
+
+.accordion.detailing {
+    overflow: hidden;
+}
+
+.accordion.detailing .accordion-content .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    padding: 0 16px;
+}
+
+.accordion.detailing .accordion-content .table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.accordion.detailing .accordion-content .table-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.accordion.detailing .accordion-content .table-wrapper::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.accordion.detailing .accordion-content table {
+    width: auto;
+    min-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.accordion.detailing .accordion-content table td {
+    text-align: left;
+    width: 285px;
+    max-width: 285px;
+}
+
+.accordion.detailing .accordion-content tr td {
+    padding: 8px;
+    white-space: nowrap;
+    border: 1px solid #E0E0E0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #022135;
+    text-overflow: ellipsis;
+}
+
+.accordion.detailing .accordion-content tr td:first-child {
+    width: 32px;
+    max-width: 32px;
+}
+
+.accordion.detailing .accordion-content tr td svg {
+    position: relative;
+    transform: translateY(5px);
+}
+
+.accordion.detailing .accordion-content tr:hover {
+    background: #E0E0E0;
+}
+
+.accordion.detailing .accordion-content table tr:first-child {
+    background-color: transparent;
+    height: 64px;
+}
+
+.accordion.detailing .accordion-content table thead tr:first-child td {
+    vertical-align: baseline;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    color: #022135;
+}
+
+.accordion.detailing .accordion-item h4 {
+    height: max-content;
+}
+
+.accordion.detailing .accordion-item .title {
+    padding: 24px 16px;
+}
+
+.accordion.detailing .pagination {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 16px;
+    padding: 8px 0;
+    gap: 8px;
+}
+
+.accordion.detailing .pagination .page-input-wrapper {
+    max-width: 52px;
+}
+
+.accordion.detailing .pagination .page-input-wrapper input {
+    max-width: 52px;
+    -webkit-appearance: none;
+    height: 32px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    padding: 7px 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #022135;
+}
+
+.accordion.detailing .pagination .page-input-wrapper input::-webkit-inner-spin-button,
+.accordion.detailing .pagination .page-input-wrapper input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.accordion.detailing .pagination button {
+    background: #F2F2F2;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin: 0 4px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #022135;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.accordion.detailing .pagination button:hover:not(:disabled) {
+    background: #E0E0E0;
+}
+
+.accordion.detailing .pagination button:disabled {
+    background: #F2F2F2;
+    border-radius: 2px;
+}
+
+.accordion.detailing .pagination button:disabled svg path{
+   stroke: #E0E0E0;
+}
+
+.accordion.detailing .pagination .active {
+    color: #FFFFFF;
+    border-color: #022135;
+}
+
+.core-statistics-item.one-item .core-statistics-item-list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.core-statistics-item.one-item {
+    flex-basis: 100%;
+}
+.core-statistics-item.one-item .core-statistics-item-list .core-statistics-list-item {
+    flex-basis: calc(25% - 8px);
+    
+    @media screen and (max-width: 1300px){
+        flex-basis: calc(33% - 8px);
+    }
+    @media screen and (max-width: 1076px){
+        flex-basis: calc(50% - 8px);
+    }
+}
+
+.core-statistics-item.one-item .accordion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.core-statistics-item-list.two-item .core-statistics-list-item {
+    flex-basis: calc(50% - 8px) !important;
 }
