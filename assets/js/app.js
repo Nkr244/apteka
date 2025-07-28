@@ -94,7 +94,7 @@ document.querySelectorAll('.accordion-item h4').forEach(item => {
         item.classList.toggle('active');
         const content = item.nextElementSibling;
         if (content) {
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            content.style.display = content.style.display === 'flex' ? 'none' : 'flex';
         }
     });
 });

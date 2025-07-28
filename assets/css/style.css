@@ -427,6 +427,9 @@ h3 {
         flex-basis: 100%;
         padding: 20px 15px;
     }
+    @media screen and (max-width: 768px) {
+        gap: 20px;
+    }
 }
 
 .breadcrumbs {
@@ -444,17 +447,22 @@ h3 {
 }
 
 .breadcrumbs a {
-    color: var(--color-black);
+    color: #00A4AB;
+
 }
 
 .breadcrumbs a.active {
-    color: #00A4AB;
+    color: var(--color-black);
 }
 
 .filter-period {
     display: flex;
     align-items: center;
     gap: 16px;
+
+    @media screen and (max-width: 768px){
+        margin-bottom: 12px;
+    }
 }
 
 .filter-period .title {
@@ -681,7 +689,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 8px;
 
     @media screen and (max-width: 550px) {
         gap: 2px;
@@ -696,14 +704,14 @@ h3 {
     padding: 16px;
     gap: 16px;
     background: #FFFFFF;
-    flex-basis: calc(25% - 16px);
+    flex-basis: calc(25% - 6px);
 
     @media screen and (max-width: 1076px) {
-        flex-basis: calc(33% - 16px);
+        flex-basis: calc(33% - 4px);
     }
 
     @media screen and (max-width: 768px) {
-        flex-basis: calc(50% - 16px);
+        flex-basis: calc(50% - 4px);
     }
 
     @media screen and (max-width: 550px) {
@@ -940,6 +948,8 @@ h3 {
 
     .accordion-content {
         display: none;
+        flex-direction: column;
+        gap: 2px;
     }
 
     .table-container .accordion .accordion-content table {
@@ -1026,13 +1036,13 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    flex-basis: calc(25% - 8px);
+    flex-basis: calc(25% - 6px);
 
     @media screen and (max-width: 1600px) {
-        flex-basis: calc(33% - 8px);
+        flex-basis: calc(33% - 2px);
     }
     @media screen and (max-width: 1076px) {
-        flex-basis: calc(50% - 8px);
+        flex-basis: calc(50% - 4px);
     }
     @media screen and (max-width: 768px) {
         display: none;
@@ -1097,6 +1107,9 @@ h3 {
     height: 76px;
     gap: 16px;
 }
+.core-statistics .accordion-content .core-statistics-list-item:last-child {
+    margin-bottom: 2px;
+}
 
 .core-statistics .accordion-content .core-statistics-list-item p {
     font-weight: 400;
@@ -1130,7 +1143,7 @@ h3 {
 
 .accordion {
     flex-direction: column;
-    gap: 2px;
+    gap: 0;
     width: 100%;
 }
 
@@ -1149,7 +1162,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 78px;
+    height: 76px;
 }
 
 .accordion-item .title {
@@ -1209,8 +1222,8 @@ h3 {
     background: #EEF6F7;
 }
 
-.table-container tbody tr td:nth-child(4), .table-container td:first-child {
-    font-weight: 400;
+.table-container tbody tr td:nth-child(4), .table-container td:first-child, .table-container td:last-child  {
+    font-weight: 700;
 }
 
 .active .accordion-content {
@@ -1218,9 +1231,8 @@ h3 {
 }
 
 .table-container tbody tr td:last-child {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .accordion-content table tr:first-child td {
@@ -1397,13 +1409,13 @@ h3 {
     flex-basis: 100%;
 }
 .core-statistics-item.one-item .core-statistics-item-list .core-statistics-list-item {
-    flex-basis: calc(25% - 8px);
+    flex-basis: calc(25% - 6px);
     
     @media screen and (max-width: 1300px){
-        flex-basis: calc(33% - 8px);
+        flex-basis: calc(33% - 2px);
     }
     @media screen and (max-width: 1076px){
-        flex-basis: calc(50% - 8px);
+        flex-basis: calc(50% - 4px);
     }
 }
 
@@ -1414,5 +1426,9 @@ h3 {
 }
 
 .core-statistics-item-list.two-item .core-statistics-list-item {
-    flex-basis: calc(50% - 8px) !important;
+    flex-basis: calc(50% - 4px) !important;
+}
+
+.accordion.accordion-main {
+    gap: 2px;
 }
