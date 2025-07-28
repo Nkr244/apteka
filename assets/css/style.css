@@ -1271,8 +1271,7 @@ h3 {
 
 .accordion.detailing .accordion-content table td {
     text-align: left;
-    width: 285px;
-    max-width: 285px;
+    min-width: 315px;
 }
 
 .accordion.detailing .accordion-content tr td {
@@ -1287,7 +1286,7 @@ h3 {
 }
 
 .accordion.detailing .accordion-content tr td:first-child {
-    width: 32px;
+    min-width: 32px;
     max-width: 32px;
 }
 
